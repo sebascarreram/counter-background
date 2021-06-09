@@ -1,0 +1,32 @@
+.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 2rem 8rem;
+  border: 1px solid #d5d5d5;
+  background-image: linear-gradient(#eee, #ddd);
+  cursor: pointer;
+
+  &--green {
+    color: #fff;
+    background: #357e38;
+    //border-color: #4a993e;
+
+    &:hover {
+      background: #256940;
+    }
+  }
+  &--red {
+    background: #b42818;
+    color: #fff;
+  }
+  &--full{
+    @include respond(phone){
+      width: 100%;
+    }
+  }
+  &--borderBlack{
+    border: 0.8px solid black;
+  }
+}
