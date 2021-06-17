@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./sass/main.scss";
 import Button from "./components/button/button";
 import DateNow from "./utils/date";
@@ -14,7 +14,7 @@ const Count = ({ count, addOne, minusOne, color }) => (
   </div>
 );
 
-class App extends React.Component {
+class App extends Component {
   state = {
     count: 0,
     backgroundColor: "#dfe6e9",
